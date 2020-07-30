@@ -14,7 +14,7 @@ def cleverbot(stimulus, context=[]):
             'XVIS': re.search(
                 r"\w+(?=;)",
                 req.headers["Set-cookie"]).group()}
-    payload = f"stimulus={requests.utils.requote_uri(stimulus + '.')}&"
+    payload = f"stimulus={requests.utils.requote_uri(stimulus)}&"
 
     reverseContext = list(reversed(_context))
 
@@ -37,6 +37,6 @@ if __name__ == "__main__":
     while True:
         message = input(">> ")
         response = cleverbot(message, context)
-        context.append(message + ".")
+        context.append(message)
         context.append(response)
         print(response)

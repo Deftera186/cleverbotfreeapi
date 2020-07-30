@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setup(
 	name='cleverbotfreeapi',
-	version='1.0.1',
+	version='1.0.2',
 	author='Liav Mordouch',
 	author_email='liavmordouch@gmail.com',
 	description='Simple unofficial package to interact with the same API that the Cleverbot website uses for free.',
