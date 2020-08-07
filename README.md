@@ -3,6 +3,8 @@
 # cleverbotfreeapi
 Simple unofficial package to interact with the same API that the Cleverbot website uses for free.
 This package is inspired from the package that was written in node.js: https://www.npmjs.com/package/cleverbot-free
+
+![Downloads](https://pepy.tech/badge/cleverbotfreeapi) ![PyPI](https://img.shields.io/pypi/v/cleverbotfreeapi) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cleverbotfreeapi) ![PyPI - License](https://img.shields.io/pypi/l/cleverbotfreeapi)
 ## Installation
 ```pip
 pip install cleverbotfreeapi
