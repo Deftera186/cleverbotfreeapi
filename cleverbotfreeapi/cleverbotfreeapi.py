@@ -43,7 +43,8 @@ def cleverbot(stimulus, context=[], session=None):
         "https://www.cleverbot.com/webservicemin?uc=UseOfficialCleverbotAPI",
         cookies=cookies,
         data=payload)
-    response = requests.utils.unquote(req.headers["CBOUTPUT"])
+    getresponse = re.split(r'\\r',str(req.content))[0]
+    response = getresponse[2:-1]
     if session:
         sessions[session].extend([stimulus, response])
     return response
