@@ -1,15 +1,18 @@
 import requests
 import hashlib
 import re
+import datetime
 
 cookies = None
 sessions = dict()
 
+def get_date():
+    return datetime.datetime.now().strftime("%Y%m%d")
 
 def cleverbot(stimulus, context=[], session=None):
     global cookies, sessions
     if (cookies is None):
-        req = requests.get("https://www.cleverbot.com/")
+        req = requests.get("https://www.cleverbot.com/extras/conversation-social-min.js?{}".format(get_date()))
         cookies = {
             'XVIS': re.search(
                 r"\w+(?=;)",

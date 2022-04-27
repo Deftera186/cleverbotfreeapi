@@ -2,7 +2,6 @@
 
 # cleverbotfreeapi
 Simple unofficial package to interact with the same API that the Cleverbot website uses for free.
-This package is inspired from the package that was written in node.js: https://www.npmjs.com/package/cleverbot-free
 
 ![Downloads](https://pepy.tech/badge/cleverbotfreeapi) ![PyPI](https://img.shields.io/pypi/v/cleverbotfreeapi) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cleverbotfreeapi) ![PyPI - License](https://img.shields.io/pypi/l/cleverbotfreeapi)
 ## Installation
@@ -26,7 +25,7 @@ cleverbotfreeapi.cleverbot("Fine :)", session="Deftera")
 
 # With context and session
 # An ongoing conversation with the first question as "How are you?"
-cleverbot(input(">>"), ["hi.", "How are you?"], "How are you?")
+cleverbotfreeapi.cleverbot(input(">>"), ["hi.", "How are you?"], "How are you?")
 while True:
-  print(cleverbot(input(">>"), session="How are you?"))
+  print(cleverbotfreeapi.cleverbot(input(">>"), session="How are you?"))
 ```

@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 with open('README.md', 'r', encoding='utf8') as f:
 	long_description = f.read()
 
-with open('requirements.txt') as f:
+with open('requirements.txt', 'r') as f:
 	requirements = f.read().splitlines()
 
 setup(
 	name='cleverbotfreeapi',
-	version='1.1.0',
+	version='1.1.1',
 	author='Liav Mordouch',
 	author_email='liavmordouch@gmail.com',
 	description='Simple unofficial package to interact with the same API that the Cleverbot website uses for free.',
